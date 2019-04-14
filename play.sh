@@ -3,9 +3,9 @@ FOLDER=$1
 FILE="/home/hls/$FOLDER"
 
 if [ $FOLDER = "mosaic" ]; then
-    SCREEN=0
+    y=0
 else
-    SCREEN=1
+    y=1367
 fi
 echo $SCREEN
 while [ ! -d $FILE ]; do
@@ -14,6 +14,7 @@ while [ ! -d $FILE ]; do
 done
 
 echo "Opening player for $FOLDER"
-vlc --qt-fullscreen-screennumber=$SCREEN -f rtmp://localhost/live/$FOLDER
-
-# cvlc -f rtmp://localhost/live/$FOLDER --no-embedded-video --fullscreen --video-on-top -L --video-x $SCREEN --video-y 0 --no-one-instance
+# cvlc --qt-fullscreen-screennumber=$SCREEN -f rtmp://localhost/live/$FOLDER
+# cvlc -f rtmp://localhost/live/$FOLDER
+smplayer rtmp://localhost/live/$FOLDER -minigui -fullscreen -pos $y 0
+# vlc -f rtmp://localhost/live/$FOLDER --no-embedded-video --fullscreen --video-on-top -L --video-x $SCREEN --video-y 0 --no-one-instance
