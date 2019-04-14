@@ -1,0 +1,9 @@
+-i http://tvsat:Apaansihl03@localhost:9981/stream/channelnumber/12 -an 
+-i http://tvsat:Apaansihl03@localhost:9981/stream/channelnumber/7 -an 
+-i http://tvsat:Apaansihl03@localhost:9981/stream/channelnumber/3 -an 
+-i http://tvsat:Apaansihl03@localhost:9981/stream/channelnumber/9 -an 
+-i /home/tvmon/logoTV.jpg 
+-i http://tvsat:Apaansihl03@localhost:9981/stream/channelnumber/2 -an 
+-i http://tvsat:Apaansihl03@localhost:9981/stream/channelnumber/14 -an 
+-i http://tvsat:Apaansihl03@localhost:9981/stream/channelnumber/6 -an 
+-i http://tvsat:Apaansihl03@localhost:9981/stream/channelnumber/13 -an 
